@@ -1,180 +1,170 @@
-# ¿Qué es Python? 📦  
-Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.2​ Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.  
-Administrado por la Python Software Foundation, posee una licencia de código abierto, denominada Python Software Foundation License.3​ Python se clasifica constantemente como uno de los lenguajes de programación más populares.
-# ¿Qué es una variable? 📜  
-Una variable se declara para indicarle al programa a partir de qué lugar empieza a existir, qué nombre tendrá y qué tipo de datos almacenará. La asignación de un valor inicial se llama inicialización.  
-## Nombrando una variable 📃
+# ¿Qué es Python? 👩‍💻  
+En términos técnicos, Python es un lenguaje de programación de alto nivel, orientado a objetos, con una semántica dinámica integrada, principalmente para el desarrollo web y de aplicaciones informáticas.
+# ¿Qué es una variable? 📁  
+Una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio.
+## Nombrando una variable 📂
 ```Python 
-variable
+dato
 ```
-## Asignando valores a una variable 📃
+## Asignando valores a una variable 📂
 ```Python
-variable = 100  
-varianle = "hola"
+dato = 40  
+dato = "buenos dias"
+# lo que se encuentra despues del "=" es el valor que tomo la variable
 ```
-## Operadores básicos 📃
+## Operadores básicos 📂
 ```Python
 suma : +  
 resta : -  
+módulo : %  
+potenciación : **  
 multiplicación : *  
 división : /  
-división entera : //  
-módulo : %  
-potenciación : **
 ```
-### Suma 1️⃣
+### Suma ⌨️
 ```Python
-suma = 10 + 10  
-    print (suma)
+operacion = 12 + 43  
+    print (operacion)
 ```
-### Resta 2️⃣
+### Resta ⌨️
 ```Python  
-resta = 10 - 10  
-    print (resta)
+operacion = 43 - 12  
+    print (operacion)
 ```
-### Multiplicación 3️⃣
+### Multiplicación ⌨️
 ```Python
-multiplicación = 10 * 10  
-    print (multiplicación)
+operacion = 43 * 2  
+    print (operacion)
 ```
-### División 4️⃣
+### División ⌨️
 ```Python
-división = 10 / 10  
-    print (división)
+operacion = 50 / 2  
+    print (operacion)
 ```
-### Módulo 5️⃣
+### Módulo ⌨️
 ```Python
-modulo = 10 % 10
-    print (mpdulo)
+operacion = 100 % 2  
+    print (operacion)
 ```
-### Potencia 6️⃣
+### Potencia ⌨️
 ```Python
-potencia = 10 ** 10
-    print (potencia)
+operacion = 50 ** 2  
+    print (operacion)
 ```
-# Tipos de datos en Python 📜
-## Integer 📃
-El tipo de datos entero se define por la palabra reservada int. Para definir un tipo de dato, se escribe lo siguiente: int nombre_variable = valor; No es necesario que la variable tenga un valor predeterminado.
+# Tipos de datos en Python 📁
+## Integer 📂
+Se define por la palabra int. En el se almacenan todos lod numeros con un valor entero.
 
 ejemplo:
 ```Python
-a = 100  
-num = 400
+num1 = 143  
+num2 = 43
 ```
-## Float 📃
-El formato de dato del tipo “coma flotante” o “float” se aplica a los números con decimales.
+## Float 📂
+Float es un tipo de dato donde se almacenan los decimales. Tambien se incluyen los numeros en notación cientifica.
 
 ejemplo:
 ```Python
-a = 9.2  
-num = 10e2
+num1 = 53.2  
+num2 = 54e2
 ```
-## String 📃
-El objeto String se utiliza para representar y manipular una secuencia de caracteres que representan un texto.
+## String 📂
+Se representa a traves de str. String funciona para almacenar cadenas de palabras.
 
 ejemplo:  
 ```Python
-print("Hola, me llamo Diego")
+mensaje = str(input("Escriba un mensaje: "))
+print(mensaje)
 ```
-## Casting en Python 📃
-Convierte un tipo de datos a otro, pueden ser:  
-int  
-float  
-string
+## Casting en Python 📂
+El casting nos sirve para transformar un tipo de dato en otro(int, str, float).
 
 ejemplo:
 ```Python
-num1 = 34   # <class 'int'>  
-num2 = 5.99 # <class 'float'>  
-a = a + b  
-print(a)       # 39.99 
-print(type(a)) # <class 'float'>
+num1 = 8   #int 
+num2 = 102.4 #float 
+num1 = num1 + num2  
+print(num1)       
+print(type(num1)) #float
 ```
-## List 📃
-Una lista es una estructura de datos y un tipo de dato en python con características especiales. Lo especial de las listas en Python es que nos permiten almacenar cualquier tipo de valor como enteros, cadenas y hasta otras funciones.
+## List 📂
+Una lista nos permite almacenar datos de todo tipo(int, float, str), para posteriormente utilizarlos ya sea imprimiendo los datos pedidos o haciendo operaciones donde se necesiten datos predeterminados.
 
 ejemplo:
 ```Python
-lista = [1, 2.5, 'Diego', [5,6] ,4]
+factura = ['pan', 'huevos', 100, 1234]
+print (factura[2])
 ```
-## Tuple 📃
-Un tuple es una colección de datos cuyo orden es inalterable, o sea, son elementos ordenados en una secuencia específica y que posee importancia. En Python, los tuples se escriben entre paréntesis.
+## Tuple 📂
+Un tuple es una colección de datos cuyo orden es inalterable, en otras palabras un tuple esta ordenado por importancia.
 
 ejemplo:
 ```Python
-tuple_frutas = ("manzana", "plátano", "cereza")  
-tuple_frutas[3] = "piña" #Esto creará un error  
-print(tuple_frutas)
+valores = ("Python", True, 10)
+print (valores.index(True))
 ```
-## Dictionary 📃
-Un Diccionario es una estructura de datos y un tipo de dato en Python con características especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, listas e incluso otras funciones. Estos diccionarios nos permiten además identificar cada elemento por una clave (Key).
+## Dictionary 📂
+Asi como tuple un diccionario nos permite almacenar datos ya sean, int, float, str para posteriormente ser utilizados segun se necesite.
 
 ejemplo:
 ```Python
-diccionario = {'nombre' : 'Diego', 'edad' : 21, 'cursos': ['Python'] }
+diccionario = dict
+diccionario = {'mascota' : 'perro', 'raza' : "labrador", 'edad': 10}
 
-print diccionario['nombre'] #Diego  
-print diccionario['edad']#21  
-print diccionario['cursos'] #['Python']
+print (diccionario['mascota'])  
+print (diccionario['raza']) 
+print (diccionario['edad'])
 ```
-# Tomando decisiones 📜
-## Sentencia if 📃
-La estructura de control if ... permite que un programa ejecute unas instrucciones cuando se cumplan una condición. En inglés "if" significa "si" (condición).
-
-ejemplo:
-```Python
-m = 10  
-if m = 10  
-    print('hola')
-[salida] = hola
-```
-## Ciclo For 📃
-En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle for es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar iteración.
-```Python
-print("Comienzo")  
-for i in [0, 1, 2]:  
-    print("Hola ", end="")  
-print()  
-print("Final")
-```
-## Ciclo While 📃
-Un bucle while permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (es decir, mientras la condición tenga el valor True).
+# Tomando decisiones 📁
+## Sentencia if 📂
+If solo permite que el programa ejecute cuando su condicion se cumple
 
 ejemplo:
 ```Python
-i = 1  
-while i <= 3:  
-    print(i)  
+num1 = 23  
+if num1 == 23:  
+    print('bien hecho')  
+```
+## Ciclo For 📂
+El bucle for es una estructura de control en programación en la que se puede indicar de antemano el número máximo de iteraciones
+
+ejemplo:
+```Python
+num1 = [43, 78.4, 92, 32]  
+for n in num1:  
+    print(n)
+```
+## Ciclo While 📂
+Un bucle while permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición.
+
+ejemplo:
+```Python
+i=0  
+while i < 10:      
     i += 1  
-print("Programa terminado")
+    print (i)
   ```
-## Break 📃:  
-En Python, la instrucción break le proporciona la oportunidad de cerrar un bucle cuando se activa una condición externa. Debe poner la instrucción break dentro del bloque de código bajo la instrucción de su bucle, generalmente después de una instrucción if condicional.
+## Break 📂:  
+Debe poner la instrucción break dentro del bloque de código bajo la instrucción de su bucle, generalmente después de una instrucción if condicional.
 
 ejemplo:
 ```Python
-number = 0
-
-for number in range(10):  
-    if number == 5:  
-        break    # break here
-
-    print('Number is ' + str(number))
-
-print('Out of loop')
+i = 0  
+while i < 20:  
+    i += 2  
+    if i == 8:  
+        break  
+    print(i)
 ```
-## Continue 📃
-La instrucción continue da la opción de omitir la parte de un bucle en la que se activa una condición externa, pero continuar para completar el resto del bucle. Es decir, la iteración actual del bucle se interrumpirá, pero el programa volverá a la parte superior del bucle.
+## Continue 📂
+La instrucción continue da la opción de omitir la parte de un bucle en la que se activa una condición externa.
 
 ejemplo:
 ```Python
-number = 0
-
-for number in range(10):  
-    if number == 5:  
-        continue    # continue here
-
-    print('Number is ' + str(number))
-
-print('Out of loop')
+i = 0  
+while i < 20:  
+    i += 2  
+    if i == 7:  
+        continue  
+    print(i)
 ```
